@@ -4,7 +4,7 @@
 	the displays), and the display that shows users the current weather conditions.
 =end
 
-class WeatherData
+class WeatherData # Subject
 	attr_writer :temp, :humidity, :pressure
 
 	def initialize(overrides = {})
@@ -42,19 +42,19 @@ class WeatherData
 	end
 end
 
-class CurrentConditionsDisplay
+class CurrentConditionsDisplay # Observer
 	def update(temp, humidity, pressure)
 		puts 'updated current conditions'
 	end
 end
 
-class StatisticsDisplay
+class StatisticsDisplay # Observer
 	def update(temp, humidity, pressure)
 		puts 'updated statistics'
 	end
 end
 
-class ForecastDisplay
+class ForecastDisplay # Observer
 	def update(temp, humidity, pressure)
 		puts 'updated forecast'
 	end
