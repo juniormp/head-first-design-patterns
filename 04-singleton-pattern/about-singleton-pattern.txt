@@ -1,3 +1,11 @@
 What is about ?
 
 The Singleton Pattern ensures a class has only one instance, and provides a global point of access to it.
+
+
+Bullet Points
+
+- The Singleton Pattern ensures you have at most one instance of a class in your application.
+- The Singleton Pattern also provides a global access point to that instance.
+- Examine your performance and resource constraints and carefully choose an appropriate Singleton implementation for multithreaded applications (and we should consider all applications multithreaded!).
+- Be careful if you are using multiple class loaders; this could defeat the Singleton implementation and result in multiple instances.
